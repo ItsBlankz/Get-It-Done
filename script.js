@@ -43,8 +43,6 @@ function createTodoItem(name) {
     listItem.classList.add("list-item", index);
 }
 
-//you can get the Index of the button clicked and then work on other stuff using it
-
 function otherTodoFunc() {
     todoDoneBtns = document.querySelectorAll(".list-item > button");
     editTodoBtns = document.querySelectorAll(
@@ -128,10 +126,3 @@ addTodo.addEventListener("click", (e) => {
         totalTodoText.innerText = totalTodos.length;
     }
 });
-
-/* 
-for edit:
-
-when edit button pressed -> change innerHTML to  requirement (probably a form and text box) -> add required classList (for styles)
--> assign inner value as old todoName -> get New Value -> change todoName in html and in the list
-*/
