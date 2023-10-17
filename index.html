@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GetItDone</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Get-It-<span>Done</span></h1>
+        </header>
+        <main>
+            <div id="todo-done-container">
+                <div id="main-text">
+                    <p>Todos Done</p>
+                    <p>keep it up</p>
+                </div>
+                <div>
+                    <span id="todo-done">0</span>/<span id="total-todo">0</span>
+                </div>
+            </div>
+            <form>
+                <input
+                    type="text"
+                    name="task-name-inp"
+                    id="todo-name"
+                    placeholder="write your next task"
+                />
+                <button id="submit-form">+</button>
+            </form>
+        </main>
+        <ul class="task-list"></ul>
+    </body>
+</html>
