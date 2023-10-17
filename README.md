@@ -1,4 +1,4 @@
-<h1>[Get-It-Done](https://itsblankz.github.io/Get-It-Done/)</h1>
+<h1>Get-It-Done</h1>
 
 A simple Todo-List made using ***Vanilla HTMl, CS & JS***
 
