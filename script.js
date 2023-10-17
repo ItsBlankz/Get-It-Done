@@ -107,10 +107,19 @@ function refreshList() {
     }
 }
 
+const isDuplicate = (element) => {
+    for (todo of totalTodos) {
+        if (todo === element) {
+            return true;
+        }
+    }
+    return false;
+};
+
 addTodo.addEventListener("click", (e) => {
     e.preventDefault();
     let todoName = nameInput.value;
-    if (todoName) {
+    if (todoName && !isDuplicate(todoName)) {
         totalTodos.push(todoName);
         createTodoItem(todoName);
         nameInput.value = "";

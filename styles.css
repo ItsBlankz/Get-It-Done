@@ -39,7 +39,7 @@ header span {
 }
 
 main {
-    padding-top: 20px;
+    padding-top: 30px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -204,4 +204,22 @@ li > p {
     aspect-ratio: 1;
     padding: 0;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .task-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        padding-top: 75px;
+    }
+}
+
+@media (max-width: 750px) {
+    .task-list {
+        grid-template-columns: 1fr;
+    }
+    main {
+        padding-top: 75px;
+    }
 }
